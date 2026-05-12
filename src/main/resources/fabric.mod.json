@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "totemclean",
+	"version": "${version}",
+	"name": "Totem Clean",
+	"description": "Removes your own totem of undying activation animation and particles. Keeps the sound.",
+	"authors": ["CardeJIbka"],
+	"contact": {
+		"sources": "https://github.com/CardeJIbka/TotemClean"
+	},
+	"license": "MIT",
+	"icon": "assets/totemclean/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": ["cardejibka.totemclean.client.TotemCleanClient"]
+	},
+	"mixins": [
+		{
+			"config": "totemclean.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": ">=1.21 <=1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
