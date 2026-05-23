@@ -1,6 +1,5 @@
 package cardejibka.totemclean.client.mixin;
 
-import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.renderer.GameRenderer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -15,7 +14,7 @@ public class GameRendererMixin {
             at = @At("HEAD"),
             cancellable = true
     )
-    private void cancelTotemAnimation(GuiGraphics guiGraphics, float partialTick, CallbackInfo ci) {
+    private void cancelTotemAnimation(int width, int height, float partialTick, CallbackInfo ci) {
         ci.cancel();
     }
 }
