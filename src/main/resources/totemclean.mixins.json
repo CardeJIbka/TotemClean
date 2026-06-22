@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "cardejibka.totemclean.client.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "totemclean.refmap.json",
+  "client": [
+    "GameRendererMixin",
+    "LevelRendererMixin",
+    "UseTotemMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
