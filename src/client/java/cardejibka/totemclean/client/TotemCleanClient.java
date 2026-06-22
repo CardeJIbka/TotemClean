@@ -7,7 +7,7 @@ public class TotemCleanClient implements ClientModInitializer {
 
 	public static boolean suppressingMyTotem = false;
 	private static int ticksRemaining = 0;
-	private static final int SUPPRESS_TICKS = 80; // 4 секунды — перекрывает весь lifecycle частиц
+	private static final int SUPPRESS_TICKS = 80;
 
 	@Override
 	public void onInitializeClient() {
