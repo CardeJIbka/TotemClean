@@ -4,7 +4,7 @@
 	"package": "cardejibka.totemclean.client.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"client": [
-		"GameRendererMixin",
+		"ItemActivationMixin",
 		"ClientLevelMixin",
 		"TotemParticleMixin",
 		"UseTotemMixin"
